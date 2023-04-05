@@ -1,0 +1,27 @@
+{
+  "name": "germanrcuriel",
+  "version": "1.0.0",
+  "description": "GitHub README profile",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "update-readme": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/germanrcuriel/germanrcuriel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/germanrcuriel/germanrcuriel/issues"
+  },
+  "homepage": "https://github.com/germanrcuriel/germanrcuriel#readme",
+  "dependencies": {
+    "node-fetch": "2.6.1"
+  },
+  "devDependencies": {
+    "standard": "16.0.4"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
