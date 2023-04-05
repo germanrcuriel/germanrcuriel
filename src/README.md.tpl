@@ -6,16 +6,16 @@
 
 <p align="center">
   <a href="https://youtube.com/@germix" target="blank">
-    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="Germix" height="28px" width="28px" style="color: purple" />
+    <img align="center" src="https://cdn.simpleicons.org/youtube/FF0000" alt="Germix" height="28px" width="28px" style="color: purple" />
   </a>
   <a href="https://instagram.com/germix_tv" target="blank">
-    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="Germix" height="28px" width="28px" style="color: purple" />
+    <img align="center" src="https://cdn.simpleicons.org/instagram/E4405F" alt="Germix" height="28px" width="28px" style="color: purple" />
   </a>
   <a href="https://twitch.tv/germix_tv" target="blank">
-    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitch.svg" alt="Germix" height="28px" width="28px" style="color: purple" />
+    <img align="center" src="https://cdn.simpleicons.org/twitch/9146FF" alt="Germix" height="28px" width="28px" style="color: purple" />
   </a>
   <a href="https://twitter.com/germix_tv" target="blank">
-    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="Germix" height="28px" width="28px" style="color: blue" />
+    <img align="center" src="https://cdn.simpleicons.org/twitter/1DA1F2" alt="Germix" height="28px" width="28px" style="color: blue" />
   </a>
 </p>
 
