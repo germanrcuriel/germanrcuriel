@@ -15,7 +15,9 @@
   </a>
 </p>
 
-### 📹 Últimos vídeos en mi [canal de Youtube](https://youtube.com/@germix?sub_confirmation=1)
+<hr />
+
 <p align="center">
-%{{latest_youtube}}%
+  <h3>📹 Últimos vídeos en mi <a href="https://youtube.com/@germix?sub_confirmation=1" target="blank">canal de Youtube</a></h3>
 </p>
+<p align="center">&#8287;%{{latest_youtube}}%</p>
