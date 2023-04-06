@@ -24,6 +24,9 @@ const generateYoutubeHTML = ({ title, videoId }) => `
     getLatestYoutubeVideos()
   ])
 
+  // generate id
+  const generateId = (Math.random() + 1).toString(36).substring(7)
+  
   // create latest youtube videos channel
   const latestYoutubeVideos = videos
     .map(({ snippet }) => {
@@ -36,6 +39,7 @@ const generateYoutubeHTML = ({ title, videoId }) => `
   // replace all placeholders with info
   const newMarkdown = template
     .replace(PLACEHOLDERS.LATEST_YOUTUBE, latestYoutubeVideos)
+    .replace(PLACEHOLDERS.ID, generateId)
 
   await fs.writeFile('README.md', newMarkdown)
 })()
