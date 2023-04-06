@@ -3,5 +3,6 @@ export const NUMBER_OF = {
 }
 
 export const PLACEHOLDERS = {
+  ID: '%{{id}}%',
   LATEST_YOUTUBE: '%{{latest_youtube}}%'
 }
