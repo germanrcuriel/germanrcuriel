@@ -1,4 +1,4 @@
-<p align="center" width="300" id="dtlnk">
+<p align="center" width="300" id="wq2og">
   <h3 align="center">¡Hola 👋, soy Germán!</h3>
 </p>
 
