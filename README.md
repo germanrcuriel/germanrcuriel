@@ -1,4 +1,4 @@
-<p align="center" width="300" id="sqtik">
+<p align="center" width="300" id="si2tk">
   <h3 align="center">¡Hola 👋, soy Germán!</h3>
 </p>
 
