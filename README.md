@@ -1,4 +1,4 @@
-<p align="center" width="300" id="pgebbi">
+<p align="center" width="300" id="s2pgp">
   <h3 align="center">¡Hola 👋, soy Germán!</h3>
 </p>
 
