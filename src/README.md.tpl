@@ -1,4 +1,4 @@
-<p align="center" width="300" id="%{{id}}%">
+<p align="center" width="300">
   <h3 align="center">¡Hola 👋, soy Germán!</h3>
 </p>
 
@@ -21,3 +21,8 @@
   <h3>📹 Últimos vídeos en mi <a href="https://youtube.com/@germix?sub_confirmation=1" target="blank">canal de Youtube</a></h3>
 </p>
 <p align="center">&#8287;%{{latest_youtube}}%</p>
+
+<p align="center">
+  <h3>📸 Lo último que he subido a <a href="https://instagram.com/germix_tv" target="blank">Instagram</a></h3>
+</p>
+<p align="center">&#8287;%{{latest_instagram}}%</p>
