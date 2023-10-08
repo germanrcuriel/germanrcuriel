@@ -48,6 +48,7 @@ console.log('starting...');
 
   // create latest media from instagram
   const latestInstagramMedia = photos
+    .filter((item) => item.node.is_video)
     .slice(0, NUMBER_OF.PHOTOS)
     .map(generateInstagramHTML)
     .join('  &#8287;')
