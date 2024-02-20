@@ -2,7 +2,7 @@
   <h3 align="center">¡Hola 👋, soy Germán!</h3>
 </p>
 
-<p align="center">A parte de ser <strong>Desarrollador JavaScript</strong> con más de 10 años experiencia, tengo un pequeño canal de YouTube en el que hago cosas relacionadas con la producción de video y live streaming.</p>
+<p align="center">A parte de ser <strong>Desarrollador Front-end</strong> con más de 10 años experiencia, tengo un pequeño canal de YouTube en el que hago cosas relacionadas con la producción de video y live streaming.</p>
 
 <p align="center">
   <a href="https://youtube.com/@germix" target="blank"><img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube" title="YouTube" width="32px" /></a>
