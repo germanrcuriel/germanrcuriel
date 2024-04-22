@@ -33,8 +33,9 @@ const generateInstagramHTML = ({ node: { display_url: url, shortcode } }) => {
   return `<a href='https://instagram.com/p/${shortcode}' target='_blank'><img width='22.5%' src='${url}' alt='Instagram photo' /></a>`
 }
 
-const generateYoutubeHTML = ({ title, videoId }) => {
-  return `<a href="https://youtu.be/${videoId}" target="blank"><img width="30%" src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" alt="${title}" title="${title}" /></a>`
+const generateYoutubeHTML = ({ title, videoId }, withLineBreak) => {
+  const lineBreak = withLineBreak ? `<br />` : ''
+  return `<a href="https://youtu.be/${videoId}" target="blank"><img width="30%" src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" alt="${title}" title="${title}" /></a>${lineBreak}`
 }
 
 console.log('starting...');
@@ -55,10 +56,11 @@ console.log('starting...');
 
   // create latest youtube videos channel
   const latestYoutubeVideos = videos
-    .map(({ snippet }) => {
+    .map(({ snippet }, index) => {
       const { title, resourceId } = snippet
       const { videoId } = resourceId
-      return generateYoutubeHTML({ videoId, title })
+      const withLineBreak = index === ((NUMBER_OF.VIDEOS / 2) - 1)
+      return generateYoutubeHTML({ videoId, title }, withLineBreak)
     })
     .join('  &#8287;')
 
