@@ -8,17 +8,17 @@ const YOUTUBE_PLAYLIST_ID = 'PLLHk2Uy_-FtomyaPhJnjb5o3w3YNZP7Za'
 
 const { INSTAGRAM_API_KEY, YOUTUBE_API_KEY } = process.env
 
-const getMediaFromInstagram = async () => {
-  const response = await fetch(`https://instagram130.p.rapidapi.com/account-medias?userid=${INSTAGRAM_USER_ID}&first=20`, {
+const getReelsFromInstagram = async () => {
+  const response = await fetch(`https://instagram-scraper-api2.p.rapidapi.com/v1.2/reels?username_or_id_or_url=${INSTAGRAM_USER_ID}`, {
     headers: {
-      'x-rapidapi-host': 'instagram130.p.rapidapi.com',
+      'x-rapidapi-host': 'instagram-scraper-api2.p.rapidapi.com',
       'x-rapidapi-key': INSTAGRAM_API_KEY
     }
   })
 
   const json = await response.json()
 
-  return json?.edges
+  return json?.data.items
 }
 
 const getLatestYoutubeVideos = () => {
@@ -29,8 +29,8 @@ const getLatestYoutubeVideos = () => {
     .then((videos) => videos.items)
 }
 
-const generateInstagramHTML = ({ node: { display_url: url, shortcode } }) => {
-  return `<a href='https://instagram.com/p/${shortcode}' target='_blank'><img width='22.5%' src='${url}' alt='Instagram photo' /></a>`
+const generateInstagramHTML = ({ thumbnail_url: url, code } }) => {
+  return `<a href='https://instagram.com/p/${code}' target='_blank'><img width='22.5%' src='${url}' alt='Instagram reel' /></a>`
 }
 
 const generateYoutubeHTML = ({ title, videoId }, withLineBreak) => {
@@ -41,15 +41,14 @@ const generateYoutubeHTML = ({ title, videoId }, withLineBreak) => {
 console.log('starting...');
 
 (async () => {
-  const [template, photos, videos] = await Promise.all([
+  const [template, reels, videos] = await Promise.all([
     fs.readFile('./src/README.md.tpl', { encoding: 'utf-8' }),
-    getMediaFromInstagram(),
+    getReelsFromInstagram(),
     getLatestYoutubeVideos()
   ])
 
-  // create latest media from instagram
-  const latestInstagramMedia = photos
-    .filter((item) => item.node.is_video)
+  // create latest reels from instagram
+  const latestInstagramMedia = reels
     .slice(0, NUMBER_OF.PHOTOS)
     .map(generateInstagramHTML)
     .join('  &#8287;')
