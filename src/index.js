@@ -29,7 +29,7 @@ const getLatestYoutubeVideos = () => {
     .then((videos) => videos.items)
 }
 
-const generateInstagramHTML = ({ thumbnail_url: url, code } }) => {
+const generateInstagramHTML = ({ thumbnail_url: url, code }) => {
   return `<a href='https://instagram.com/p/${code}' target='_blank'><img width='22.5%' src='${url}' alt='Instagram reel' /></a>`
 }
 
