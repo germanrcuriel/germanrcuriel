@@ -11,7 +11,7 @@
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://instagram.com/germix_tv" target="blank"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" title="Instagram" width="32px" /></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://twitter.com/germix_tv" target="blank"><img src="https://cdn.simpleicons.org/twitter/1DA1F2" alt="Twitter" title="Twitter" width="32px" />
+  <a href="https://x.com/germix_tv" target="blank"><img src="https://cdn.simpleicons.org/x/000000" alt="X" title="X" width="32px" />
   </a>
 </p>
 
